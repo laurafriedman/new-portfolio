@@ -157,3 +157,13 @@
     padding: 4rem 1rem;
     min-height: 14.2rem;
   }
+
+  .light-mode header {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode header {
+    background-color: black;
+    color: white;
+  }

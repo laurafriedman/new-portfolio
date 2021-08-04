@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body id="portfolio">
-        <div :class="['body-wrapper', mode[0]]">
+        <div :class="['body-wrapper', lightModeIsOn? 'light-mode' : 'dark-mode']">
             <header>
                 <div class="header-wrapper container">
                     <div class="header-text">Laura Friedman</div>
@@ -58,7 +58,7 @@
                     </li>
                 </ul>
             </div>
-            <button @click="switchMode">Switch Mode</button>
+            <button @click="toggleLightMode">Switch Mode</button>
         </div>
     </body>
     <script src="https://unpkg.com/vue@next"></script>

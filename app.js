@@ -1,11 +1,7 @@
-function getRandomValue(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
 const app = Vue.createApp({
     data() {
         return {
-            mode: 'light-mode',
+            lightModeIsOn: true,
             navigation: [
                 {text: 'skills', link: '#top-skills'}, 
                 {text: 'work', link: '#my-work'}
@@ -38,10 +34,8 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        switchMode() {
-            if (this.mode == 'light-mode') {
-                console.log('light mode on')
-            }
+        toggleLightMode() {
+            this.lightModeIsOn = !this.lightModeIsOn
         },
     }
 });
