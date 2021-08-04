@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laura Friedman - Portfolio</title>
+        <meta name="description" content="Laura Friedman - Portfolio">
+        <meta name="author" content="Laura Friedman">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="portfolio">
+        <div :class="['body-wrapper', mode[0]]">
+            <header>
+                <div class="header-wrapper container">
+                    <div class="header-text">Laura Friedman</div>
+                    <ul class="navigation">
+                        <li v-for="nav in navigation"><a :href="nav.link">{{ nav.text }}</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="hero">
+                <h1>Laura Friedman</h1>
+                <ul class="subtitle">
+                    <li v-for="subtitle in subtitles">{{ subtitle }}</li>
+                </ul>
+            </div>
+            <div class="top-skills" id="top-skills">
+                <div class="container">
+                    <h2>Top Skills</h2>
+                    <ul class="skills">
+                        <li v-for="skill in topSkills">
+                            <div class="skill-wrapper">
+                                <span>{{ skill.text }}</span>
+                                <i :class="['fa', skill.fontAwesomeIcon]" aria-hidden="true"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="my-work" id="my-work">
+                <h2>My Work</h2>
+                <ul>
+                    <li v-for="item in workItems">
+                        <span>{{ item.text }}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h2>Say Hi!</h2>
+                <ul>
+                    <li v-for="social in socialItems">
+                        <span>{{ social.text }}</span>
+                    </li>
+                </ul>
+            </div>
+            <button @click="switchMode">Switch Mode</button>
+        </div>
+    </body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</html>
