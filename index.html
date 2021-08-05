@@ -44,21 +44,33 @@
             </div>
             <div class="my-work" id="my-work">
                 <h2>My Work</h2>
-                <ul>
-                    <li v-for="item in workItems">
-                        <span>{{ item.text }}</span>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li v-for="item in workItems">
+                            <h3>{{ item.text }}</h3>
+                            <a :href="item.link" :title="item.text" target="_blank" class="work-item-link">
+                                <div class="img-overlay"><i class="fa fa-search-plus fa-3x"></i></div>
+                                <img :src="item.img" :alt="item.text">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="social">
                 <h2>Say Hi!</h2>
                 <ul>
-                    <li v-for="social in socialItems">
-                        <span>{{ social.text }}</span>
+                    <li v-for="social in socialItems" class="social-item">
+                        <a :href="social.link" :title="social.text">
+                            <span class="sr-only">{{ social.text }}</span>
+                            <i :class="['fa', social.fontAwesomeIcon]" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <button @click="toggleLightMode">Switch Mode</button>
+            <button class="switch-mode" @click="toggleLightMode">Switch to {{ lightModeIsOn? 'Dark' : 'Light' }} Mode</button>
+            <footer>
+                <span>Copyright &copy; Laura Friedman {{ new Date().getFullYear() }}</span>
+            </footer>
         </div>
     </body>
     <script src="https://unpkg.com/vue@next"></script>
