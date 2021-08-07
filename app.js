@@ -4,14 +4,15 @@ const app = Vue.createApp({
             lightModeIsOn: true,
             navigation: [
                 {text: 'skills', link: '#top-skills'}, 
-                {text: 'work', link: '#my-work'}
+                {text: 'work', link: '#my-work'},
+                {text: 'social', link: '#social'},
             ],
             subtitles: ['Web','Development','Design','Hosting','Maintenance','Seo'],
             topSkills: [
                 {text: 'HTML5', fontAwesomeIcon: 'fa-html5'},
                 {text: 'PHP', fontAwesomeIcon: 'fa-code'},
                 {text: 'Photoshop', fontAwesomeIcon: 'fa-camera-retro'},
-                {text: 'LESS/SASS', fontAwesomeIcon: 'fa-css3'},
+                {text: 'LESS/SCSS', fontAwesomeIcon: 'fa-css3'},
                 {text: 'Vue.js/jQuery', fontAwesomeIcon: 'fa-terminal'},
                 {text: 'Wordpress', fontAwesomeIcon: 'fa-wordpress'},
                 {text: 'Statistics', fontAwesomeIcon: 'fa-table'},
