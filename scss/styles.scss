@@ -9,8 +9,8 @@ $box-shadow-alt: #888888;
 $brand: #337ab7;
 
 // Fonts
-$font-family-heading: 'Russo One', sans-serif;
-$font-family-heading-alt: 'Monoton', cursive;
+$font-family-heading: 'Secular One', sans-serif;
+$font-family-heading-serif: 'DM Serif Display', serif;
 
 // Img Paths
 $bg-img-light: url('../img/light-bg.jpeg');
@@ -61,12 +61,14 @@ h1 {
 }
 
 h2 {
-  font-family: $font-family-heading-alt;
+  font-family: $font-family-heading-serif;
   font-size: 4.2rem;
   font-weight: bold;
   padding-bottom: 5rem;
   letter-spacing: 0.4rem;
   color: $brand;
+  text-decoration: underline;
+  text-transform: uppercase;
   @media only screen and (min-width: $breakpoint-tablet) {
     font-size: 5.4rem;
   }
@@ -108,7 +110,7 @@ header {
 }
 
 .header-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   @media only screen and (min-width: $breakpoint-tablet) {
     font-size: 3rem;
   }
@@ -119,7 +121,7 @@ header {
   text-transform: uppercase;
   li {
     padding-left: 1.6rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
     position: relative;
     @media only screen and (min-width: $breakpoint-tablet) {
@@ -201,7 +203,7 @@ header {
     }
     span {
         display: block;
-        font-size: 1.6rem;
+        font-size: 2rem;
       @media only screen and (min-width: $breakpoint-tablet) {
         font-size: 2.4rem;
       }
@@ -231,10 +233,10 @@ header {
     width: auto;
     margin: 0 auto;
     padding-left: 0;
+    padding-bottom: 3rem;
     @media only screen and (min-width: $breakpoint-tablet) {
       width: 33.3%;
       padding-left: 1rem;
-      padding-bottom: 3rem;
     }
     &:nth-child(4n) {
       padding-left: 0;
@@ -309,7 +311,7 @@ header {
   padding: 1rem 0.8rem;
   background-color: $brand;
   color: $white;
-  max-width: 13.4rem;
+  max-width: 12.4rem;
   font-size: 1.6rem;
   font-family: $font-family-heading;
 }
