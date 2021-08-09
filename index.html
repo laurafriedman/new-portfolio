@@ -52,6 +52,7 @@
                                 <div class="img-overlay"><i class="fa fa-search-plus fa-3x"></i></div>
                                 <img :src="item.img" :alt="item.text">
                             </a>
+                            <h4>{{ item.skills }}</h4>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +61,7 @@
                 <h2>Say Hi!</h2>
                 <ul>
                     <li v-for="social in socialItems" class="social-item">
-                        <a :href="social.link" :title="social.text">
+                        <a :href="social.link" :title="social.text" target="_blank">
                             <span class="sr-only">{{ social.text }}</span>
                             <i :class="['fa', social.fontAwesomeIcon]" aria-hidden="true"></i>
                         </a>

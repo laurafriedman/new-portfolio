@@ -20,12 +20,12 @@ const app = Vue.createApp({
                 {text: 'Business', fontAwesomeIcon: 'fa-briefcase'},
             ],
             workItems: [
-                {text: 'Powerhoop Fitness', link: 'http://powerhoopfitness.co.uk/', img: 'img/powerhoop.png'},
-                {text: 'Ace in the Hole', link: 'http://laurafriedman.webhostingforstudents.com/cas222/index.html.php', img: 'img/ace.png'},
-                {text: 'Wright Shot', link: 'http://laurafriedman.webhostingforstudents.com/wrightshot/', img: 'img/wrightshot.png'},
-                {text: 'Albina Walk', link: 'http://pcc-webtech.com/albina/index.php', img: 'img/albina.png'},
-                {text: 'Powergloves', link: 'http://powergloves.co.uk/', img: 'img/powergloves.png'},
-                {text: 'Yuki - WP Theme', link: 'http://laurafriedman.webhostingforstudents.com/cas211w/project/', img: 'img/yuki.png'},
+                {text: 'Powerhoop Fitness', link: 'http://powerhoopfitness.co.uk/', img: 'img/powerhoop.png', skills: 'Wordpress, HTML, CSS, SEO'},
+                {text: 'Ace in the Hole', link: 'http://laurafriedman.webhostingforstudents.com/cas222/index.html.php', img: 'img/ace.png', skills: 'Bootstrap, HTML, CSS, Javascript, PHP'},
+                {text: 'Wright Shot', link: 'http://laurafriedman.webhostingforstudents.com/wrightshot/', img: 'img/wrightshot.png', skills: "Bootstrap, HTML, CSS, Javascript, PHP"},
+                {text: 'Albina Walk', link: 'http://pcc-webtech.com/albina/index.php', img: 'img/albina.png', skills: "PHP"},
+                {text: 'Powergloves', link: 'http://powergloves.co.uk/', img: 'img/powergloves.png', skills: "Wordpress, HTML, CSS, SEO"},
+                {text: 'Yuki - WP Theme', link: 'http://laurafriedman.webhostingforstudents.com/cas211w/project/', img: 'img/yuki.png', skills: "PHP, Wordpress, HTML, CSS, Bootstrap"},
             ],
             socialItems: [
                 {text: 'LinkedIn', fontAwesomeIcon: 'fa-linkedin', link: 'https://www.linkedin.com/in/laura-friedman-801472156/'},
